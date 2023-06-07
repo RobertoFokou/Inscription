@@ -27,5 +27,9 @@ envoie.addEventListener('click', (e)=>{
     if(mdp != mdpconfirme){
         message('les mots de passes sont differents');
     }
+
+    if((name.value == "") || (mail.value == "") || (mdp.value == "") || (mdpconfirme.value == "")){
+        message('les champs ne peuvent pas etre vides ');
+    }  
     
 })
